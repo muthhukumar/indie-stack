@@ -10,6 +10,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { Navbar } from "./components";
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
 
@@ -31,7 +32,8 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="h-full">
+      <body className="h-full dark:bg-black">
+        <Navbar />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
